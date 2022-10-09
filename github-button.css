@@ -1,0 +1,46 @@
+.github-floating-btn {
+  background-color: black;
+  box-shadow: 0 0 10px rgb(0 0 0 / .3);
+  opacity: .8;
+  border-radius: .5em;
+  padding: .8em;
+
+  text-decoration: 0;
+  font-family: 'Fira Code', monospace;
+  color: whitesmoke;
+  line-height: 1rem;
+  
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: min(3%, .5em);
+  right: max(1%, .5em);
+}
+
+.github-floating-icon {
+  height: 1.5rem;
+  filter: brightness(100);
+  animation: spin 4s linear infinite;
+  transform: rotateY(1deg);
+  transform-origin: center;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.github-floating-text {
+  font-size: 1.5rem;
+  margin-left: 0rem;
+  font-size: 0;
+  opacity: 0;
+  transition: 400ms ease-in-out;
+}
+
+.github-floating-btn:hover .github-floating-text {
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  opacity: 1;
+}
