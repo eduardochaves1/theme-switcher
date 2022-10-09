@@ -133,7 +133,9 @@ h1 {
   height: calc(var(--btn-toggle--height) * .7);
 }
 
-.btn-toggle:hover .btn-toggle--switch {
-  transform: translateX(var(--slightly-move));
+@media (min-width: 900px) {
+  .btn-toggle:hover .btn-toggle--switch {
+    transform: translateX(var(--slightly-move));
+  }
 }
 /* === BUTTON-TOGGLE STYLING === */
