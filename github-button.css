@@ -6,14 +6,14 @@
   padding: .8em;
 
   text-decoration: 0;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Courier New', Courier, monospace;
   color: whitesmoke;
   line-height: 1rem;
   
   position: fixed;
   display: flex;
   align-items: center;
-  bottom: min(3%, .5em);
+  bottom: min(3%, .8em);
   right: max(1%, .5em);
 }
 
@@ -32,10 +32,10 @@
 }
 
 .github-floating-text {
-  font-size: 1.5rem;
-  margin-left: 0rem;
+  margin: 0rem;
   font-size: 0;
   opacity: 0;
+  transform: translateY(2px);
   transition: 400ms ease-in-out;
 }
 
