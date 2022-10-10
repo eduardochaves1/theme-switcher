@@ -132,10 +132,4 @@ h1 {
 .btn-toggle .btn-toggle--icon {
   height: calc(var(--btn-toggle--height) * .7);
 }
-
-@media (min-width: 900px) {
-  .btn-toggle:hover .btn-toggle--switch {
-    transform: translateX(var(--slightly-move));
-  }
-}
 /* === BUTTON-TOGGLE STYLING === */

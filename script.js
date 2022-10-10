@@ -31,12 +31,3 @@ btnToggle.addEventListener("click", () => {
     enableLightMode();
   }
 })
-
-btnToggle.addEventListener("mouseover", () => {
-  lightMode = localStorage.getItem("lightMode");
-  if (lightMode === "true") {
-    document.documentElement.style.setProperty("--slightly-move", "95%");
-  } else {
-    document.documentElement.style.setProperty("--slightly-move", "20%");
-  }
-})
